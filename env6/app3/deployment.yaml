@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-env6-app3
+  labels:
+    app: my-app-env6-app3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-app-env6-app3
+  template:
+    metadata:
+      labels:
+        app: my-app-env6-app3
+    spec:
+      containers:
+        - name: my-app
+          image: nginx:1.25
+          ports:
+            - containerPort: 80
