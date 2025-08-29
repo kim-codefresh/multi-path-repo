@@ -6,13 +6,7 @@ metadata:
     app: my-app-env6-app1
 spec:
   selector:
-    app: my-app
-    matchLabels:
-      app: null-env6-app1
+    app: my-app-env6-app1
   ports:
     - port: 80
       targetPort: 80
-  template:
-    metadata:
-      labels:
-        app: null-env6-app1
