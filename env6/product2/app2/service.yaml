@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-app-env6-product2-app2
+  labels:
+    app: my-app-env6-product2-app2
+spec:
+  selector:
+    app: my-app-env6-product2-app2
+  ports:
+    - port: 80
+      targetPort: 80
