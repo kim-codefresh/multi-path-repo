@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-app-env7-product1-app3
+  name: my-app-env1-product1-app1
   labels:
-    app: my-app-env7-product1-app3
+    app: my-app-env1-product1-app1
 spec:
   selector:
-    app: my-app-env7-product1-app3
+    app: my-app-env1-product1-app1
   ports:
     - port: 80
       targetPort: 80
