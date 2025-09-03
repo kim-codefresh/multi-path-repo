@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-app-env6-product1-app2
+  name: my-app-env1-product1-app1
   labels:
-    app: my-app-env6-product1-app2
+    app: my-app-env1-product1-app1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: my-app-env6-product1-app2
+      app: my-app-env1-product1-app1
   template:
     metadata:
       labels:
-        app: my-app-env6-product1-app2
+        app: my-app-env1-product1-app1
     spec:
       containers:
         - name: my-app
-          image: nginx:1.25
+          image: nginx:1.14.0
           ports:
             - containerPort: 80
