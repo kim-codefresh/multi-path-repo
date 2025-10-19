@@ -1,0 +1,18 @@
+apiVersion: v2
+name: one-repo-multiple-paths-env2-product11-app14
+description: Helm chart for one-repo-multiple-paths-env2-product11-app14
+type: application
+version: 0.1.1
+appVersion: "sandbox-3-ga-tests-2-0.1.1"
+maintainers:
+  - name: GitOps Team
+keywords:
+  - application
+  - microservice
+annotations:
+  environment: "env2"
+  product: "product11"
+  application: "app14"
+metadata:
+  labels:
+    app: one-repo-multiple-paths-env2-product11-app14

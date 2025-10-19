@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: one-repo-multiple-paths-env2-product11-app14
+  labels:
+    app: one-repo-multiple-paths-env2-product11-app14
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: one-repo-multiple-paths-env2-product11-app14
+  template:
+    metadata:
+      labels:
+        app: one-repo-multiple-paths-env2-product11-app14
+    spec:
+      containers:
+        - name: one-repo-multiple-paths
+          image: nginx:latest
+          ports:
+            - containerPort: 80
