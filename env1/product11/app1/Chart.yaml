@@ -2,8 +2,8 @@ apiVersion: v2
 name: one-repo-multiple-paths-env1-product11-app1
 description: Helm chart for one-repo-multiple-paths-env1-product11-app1
 type: application
-version: 0.1.381
-appVersion: 1.26.3
+version: 0.1.1
+appVersion: sandbox-3-ga-tests-3-0.1.1
 maintainers:
   - name: GitOps Team
 keywords:
