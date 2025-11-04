@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: one-repo-multiple-paths
-          image: nginx:1.26.3
+          image: nginx:1.24.0
           ports:
             - containerPort: 80
